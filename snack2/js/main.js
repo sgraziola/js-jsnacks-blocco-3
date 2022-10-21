@@ -13,3 +13,5 @@ soccerTeams.forEach((team) => {
     
     console.log(firstLetter);
 });
+
+//usare .map
