@@ -58,25 +58,27 @@ const cars = [
     },
 ];
 
-const benzinaCars = cars.filter(function(motore){
-    if (motore.alimentazione === "Benzina"){
+const benzinaCars = cars.filter(function(car){
+    if (car.alimentazione === "Benzina"){
+        return true;
+    }; 
+});
+const benzina2Cars = cars.filter(car => car.alimentazione === "Benzina" );
+
+const dieselCars = cars.filter(function(car){
+    if (car.alimentazione === "Diesel"){
         return true;
     }; 
 });
 
-const dieselCars = cars.filter(function(motore){
-    if (motore.alimentazione === "Diesel"){
-        return true;
-    }; 
-});
-
-const variedCars = cars.filter(function(motore){
-    if (motore.alimentazione !== "Diesel" && motore.alimentazione !== "Benzina"){
+const variedCars = cars.filter(function(car){
+    if (car.alimentazione !== "Diesel" && car.alimentazione !== "Benzina"){
         return true;
     }; 
 });
 
 console.log(benzinaCars);
+console.log(benzina2Cars);
 
 console.log(dieselCars);
 
