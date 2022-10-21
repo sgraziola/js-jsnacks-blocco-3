@@ -61,7 +61,7 @@ const dieselCars = cars.filter(function(motore){
 });
 
 const variedCars = cars.filter(function(motore){
-    if (!motore.alimentazione === "Diesel" || !motore.alimentazione === "Benzina"){
+    if (motore.alimentazione !== "Diesel" && motore.alimentazione !== "Benzina"){
         return true;
     }; 
 });
