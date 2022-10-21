@@ -9,11 +9,7 @@ soccerTeams.forEach((team) => {
     //per ogni elemento mando tutta la stringa in lower case
     const teamLower = team.toLowerCase();
     //selezione prima lettera all'indice 0
-    teamLower.forEach((letter) => {
-        letter[0].toUpperCase; 
-        console.log(teamLower);
+    const firstLetter = teamLower.charAt(0).toUpperCase;
     
-    });
-    
-    
+    console.log(firstLetter);
 });
