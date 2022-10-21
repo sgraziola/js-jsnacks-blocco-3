@@ -46,6 +46,16 @@ const cars = [
         modello: "Saxo",
         alimentazione: "Diesel"
     },
+    {
+        marca: "Tesla",
+        modello: "Model X",
+        alimentazione: "Elettrico"
+    },
+    {
+        marca: "Tesla",
+        modello: "Model Y",
+        alimentazione: "Elettrico"
+    },
 ];
 
 const benzinaCars = cars.filter(function(motore){
