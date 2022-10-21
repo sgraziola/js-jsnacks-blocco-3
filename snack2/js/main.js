@@ -5,13 +5,13 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 
 const soccerTeams = ["MIlan","juvENtus","iNTer","napoLI"];
 //scorro nell'array
-soccerTeams.forEach((team) => {
+const newTeams = soccerTeams.map(function(team){
     //per ogni elemento mando tutta la stringa in lower case
     const teamLower = team.toLowerCase();
     //selezione prima lettera all'indice 0
-    const firstLetter = teamLower.charAt(0).toUpperCase;
-    
-    console.log(firstLetter);
+    const teamUpperLetter = teamLower.charAt(0).toUpperCase();
+    const teamUpperAndLower = teamUpperLetter + teamLower.slice(1)
+    return teamUpperAndLower;
 });
 
-//usare .map
+console.log(newTeams);
